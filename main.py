@@ -67,8 +67,6 @@ GuessedLetters = []
 IncorrectLetters = []
 print("Welcome to hangman")
 
-#Akira made the new game function
-
 def bubbleSort(arr):
     n = len(arr)
 
@@ -97,7 +95,7 @@ def NewGame():
             exit()
         print("Please enter a valid input")
 
-# Krunal made the hint function
+
 
 def Hint(GuessedLetters, randomWord):
     for i in randomWord:
@@ -105,7 +103,7 @@ def Hint(GuessedLetters, randomWord):
             print('\033[94m' + "Here is your free word " + i + '\033[0m')
             break
 
-# Krunal made the SinglePlayer function
+
 
 def SinglePlayer(Life, MaxLife, Won, HintUsed, GuessedLetters, IncorrectLetters):
     while True:
@@ -174,7 +172,7 @@ def SinglePlayer(Life, MaxLife, Won, HintUsed, GuessedLetters, IncorrectLetters)
         for i in Blanks:
             print('\033[92m'+i + '\033[0m', end=' ')
 
-# Akira made the Multiplayer function
+
 
 def MultiPlayer(Life, MaxLife, Won, HintUsed, GuessedLetters, IncorrectLetters):
     randomWord = input("Player 1 please input a word for Player 2 to guess:   ").lower()
@@ -227,7 +225,7 @@ def MultiPlayer(Life, MaxLife, Won, HintUsed, GuessedLetters, IncorrectLetters):
         for i in Blanks:
             print('\033[92m' + i + '\033[0m', end=' ')
 
-# Krunal and Akira made the menu
+
 
 def HangmanMenu():
     while True:
